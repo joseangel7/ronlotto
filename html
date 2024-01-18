@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RonLotto DApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>RonLotto DApp</h1>
+    </header>
+
+    <main>
+        <div id="account-info">
+            <p id="account">Account: Not Connected</p>
+            <button onclick="connectWallet()">Connect Wallet</button>
+        </div>
+
+        <div id="interaction">
+            <h2>Deposit</h2>
+            <label for="depositAmount">Amount (ETH):</label>
+            <input type="text" id="depositAmount" placeholder="Enter amount">
+            <button onclick="deposit()">Deposit</button>
+
+            <h2>Withdraw</h2>
+            <label for="withdrawAmount">Amount (ETH):</label>
+            <input type="text" id="withdrawAmount" placeholder="Enter amount">
+            <button onclick="withdraw()">Withdraw</button>
+        </div>
+
+        <div id="contract-info">
+            <h2>Contract Info</h2>
+            <p id="prizePool">Prize Pool: Loading...</p>
+            <p id="lastDrawingTime">Last Drawing Time: Loading...</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 RonLotto DApp</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
